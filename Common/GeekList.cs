@@ -113,7 +113,7 @@ namespace PolskiMatHandel.Tools.Common
 		{
 			VerifyId(id);
 
-			string queryUriFormat = "http://www.boardgamegeek.com/xmlapi2/geeklist/{0}?comments=1";
+			string queryUriFormat = "https://www.boardgamegeek.com/xmlapi2/geeklist/{0}?comments=1";
 			string queryUriUnescaped = string.Format(Culture.Generic, queryUriFormat, id);
 			string queryUri = Uri.EscapeUriString(queryUriUnescaped);
 
@@ -397,7 +397,7 @@ namespace PolskiMatHandel.Tools.Common
 		private static string QueryName(string objectId)
 		{
 			System.Threading.Thread.Sleep(500);
-			string queryUriFormat = "http://boardgamegeek.com/xmlapi2/thing?id={0}";
+			string queryUriFormat = "https://www.boardgamegeek.com/xmlapi2/thing?id={0}";
 			string queryUriUnescaped = string.Format(Culture.Generic, queryUriFormat, objectId);
 			string queryUri = Uri.EscapeUriString(queryUriUnescaped);
 
