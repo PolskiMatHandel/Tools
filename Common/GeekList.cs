@@ -403,14 +403,18 @@ namespace PolskiMatHandel.Tools.Common
 
 			XDocument document = XDocument.Load(queryUri);
 			XElement item = document.Root.Element("item");
-			foreach (XElement name in item.Elements("name"))
+			if(item != null)
 			{
-				if (name.Attribute("type").Value == "primary")
-					return name.Attribute("value").Value;
+				foreach (XElement name in item.Elements("name"))
+				{
+					if (name.Attribute("type").Value == "primary")
+						return name.Attribute("value").Value;
+				}
 			}
-			IEnumerable<XElement> elements = item.Elements("name");
-			Debug.Assert(false);
-			return "Unknown Game";
+			// If someone makes incorrect [thing=...][/thing] link, like for example:
+			// [thing=Game of Thrones][/thing]
+			// this will be run and no warning will be emitted!
+			return "?";
 		}
 	}
 }
