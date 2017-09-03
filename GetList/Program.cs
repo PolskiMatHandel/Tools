@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using PolskiMatHandel.Tools.Common;
+using MatHandelTools.Common;
 
-namespace PolskiMatHandel.Tools.GetList
+namespace MatHandelTools.GetList
 {
 	/// <summary>
 	/// The program (re)generates intermediate geek list.

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Globalization;
 
-namespace PolskiMatHandel.Tools.Common
+namespace MatHandelTools.Common
 {
 	/// <summary>
 	/// Serves <see cref="CultureInfo"/> objects to be used when handling data conversions.

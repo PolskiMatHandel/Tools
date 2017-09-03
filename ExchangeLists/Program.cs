@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
-using PolskiMatHandel.Tools.Common;
+using MatHandelTools.Common;
 
-namespace PolskiMatHandel.Tools.ExchangeLists
+namespace MatHandelTools.ExchangeLists
 {
 	/// <summary>
 	/// Based on intermediate geek list the program analyzes per user wants lists doing some basic

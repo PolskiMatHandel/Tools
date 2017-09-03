@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Xml.Linq;
-using PolskiMatHandel.Tools.Common;
+using MatHandelTools.Common;
 
-namespace PolskiMatHandel.Tools.ShortList
+namespace MatHandelTools.ShortList
 {
 	/// <summary>
 	/// Based on intermediate geek list the program prepares short list and does some basic

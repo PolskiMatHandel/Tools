@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace PolskiMatHandel.Tools.Common
+namespace MatHandelTools.Common
 {
 	/// <summary>
 	/// Compares strings in string sorting order according to provided <see cref="CultureInfo"/>

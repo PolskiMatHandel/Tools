@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using MatHandelTools.Common;
 using System.Xml.Linq;
-using PolskiMatHandel.Tools.Common;
 
-namespace PolskiMatHandel.Tools.Users
+namespace MatHandelTools.Users
 {
 	/// <summary>
 	/// The program generates list of MathTrade users.
